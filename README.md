@@ -7,7 +7,7 @@
 - Propósito da linguagem: JerryScript é uma engine super-leve de código aberto altamente otimizada, capaz de rodar javascript de forma a consumir uma baixa quantidade de memória, o que a permite ser utilizada em equipamentos como microcontroladores. A engine suporta compilação no dispositivo, execução e proporciona acesso a periféricos do javascript.
 - Paradigma da linguagem: Orientado a objetos
 - Data de criação: A engine teve seu código aberto em 2015.
-- Principal mantenedor: Samsung
+- Principal mantenedor: Criado pela Samsung, hospedado atualmente pela Js foundation com código aberto
 ## Instalação e uso
 ~~~~
 //construir versão debug para linux
