@@ -27,4 +27,17 @@ python tools/build.py --cpointer-32bit=on
 //mudar tamanho padrão da pilha
 python tools/build.py --mem-heap=256
 ~~~~
+~~~~
+{
+  jerry_init (JERRY_FLAG_ENABLE_LOG);
+
+  char script [] = "print ('Hello, World!');";
+  jerry_parse (script, strlen (script));
+
+  jerry_run ();
+
+  jerry_cleanup ();
+}
+~~~~
+
 
