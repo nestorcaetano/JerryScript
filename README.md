@@ -1,11 +1,26 @@
 # JerryScript
-Linguagem: JerryScript
-Nestor Caetano dos Santos - nestorcaetano - 20141011110204 
-Jorge Enrique -     
-Pedro Oliveira -
+- Linguagem: JerryScript
+- Nestor Caetano dos Santos - nestorcaetano - 20141011110204 
+- Jorge Enrique -     
+- Pedro Oliveira -
 ## Resumo
-Propósito da linguagem: JerryScript é uma engine super-leve altamente otimizada capaz de rodar javascript de forma a consumir uma baixa quantidade de memória, o que a permite ser utilizada em equipamentos como microcontroladores.
-a engine suporta compilação no dispositivo, execução e proporciona acesso a periféricos do javascript.
-Paradigma da linguagem:
-Data de criação: A engine teve seu código aberto em 2015.
-Principal mantenedor: Js foundation
+- Propósito da linguagem: JerryScript é uma engine super-leve de código aberto altamente otimizada, capaz de rodar javascript de forma a consumir uma baixa quantidade de memória, o que a permite ser utilizada em equipamentos como microcontroladores. A engine suporta compilação no dispositivo, execução e proporciona acesso a periféricos do javascript.
+- Paradigma da linguagem: Orientado a objetos
+- Data de criação: A engine teve seu código aberto em 2015.
+- Principal mantenedor: Samsung
+## Instalação e uso
+~~~~
+//construir versão debug para linux
+python tools/build.py --debug
+//adicionar argumentos personalizados para o Cmake
+python tools/build.py --cmake-param=CMAKE_PARAM
+//inserir modo de perfil
+python tools/build.py --profile=es5.1|es2015-subset|minimal
+//usar libc
+python tools/build.py --jerry-libc=off
+//adicionar arquivo toolchain
+python tools/build.py --toolchain=TOOLCHAIN
+//usar alocador de memória do sistema
+python tools/build.py --system-allocator=on --jerry-libc=off
+~~~~
+
