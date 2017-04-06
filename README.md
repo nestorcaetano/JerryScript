@@ -22,5 +22,9 @@ python tools/build.py --jerry-libc=off
 python tools/build.py --toolchain=TOOLCHAIN
 //usar alocador de memória do sistema
 python tools/build.py --system-allocator=on --jerry-libc=off
+//ativar 32Bit compressed Pointer
+python tools/build.py --cpointer-32bit=on
+//mudar tamanho padrão da pilha
+python tools/build.py --mem-heap=256
 ~~~~
 
