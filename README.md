@@ -29,13 +29,19 @@ python tools/build.py --mem-heap=256
 ~~~~
 ~~~~
 {
+  //Inicializa o uso da engine JerryScript
   jerry_init (JERRY_FLAG_ENABLE_LOG);
-
+  
+  //declaram variável do tipo array de caracteres (código do JavaScript)
   char script [] = "print ('Hello, World!');";
+  
+  //comando "parse" para fazer com que um script seja executado em escopo global
   jerry_parse (script, strlen (script));
-
+  
+  //executa código no escopo global
   jerry_run ();
 
+  //acaba a execução do JavaScript para poder liberar memória
   jerry_cleanup ();
 }
 ~~~~
