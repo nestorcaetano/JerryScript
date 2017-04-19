@@ -3,6 +3,7 @@
 - Nestor Caetano dos Santos - nestorcaetano - 20141011110204 
 - Jorge Enrique - JorgeEnrique21  - 20141011110190
 - Pedro Oliveira -
+
 ## Resumo
 - Propósito da linguagem: JerryScript é uma engine super-leve de código aberto altamente otimizada, capaz de rodar javascript de forma a consumir uma baixa quantidade de memória, o que a permite ser utilizada em equipamentos como microcontroladores. A engine suporta compilação no dispositivo, execução e proporciona acesso a periféricos do javascript.
 - Paradigma da linguagem: Orientado a objetos
